@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donate Bangladesh</title>
+    <!-- <link
+    href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css"
+    rel="stylesheet"
+    type="text/css"
+  /> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      .containers {
+        max-width: 1215px;
+        margin: auto;
+      }
+
+      .active{
+        background-color: #B4F461;
+      }
+
+    </style>
+  </head>
+  <body class="">
+    <!-- nav -->
+    <section class="bg-[#F9F7F3] py-5 sticky top-0 z-50">
+      <div class="containers">
+        <nav class="flex items-center justify-center md:gap-[23.75rem] gap-[56px]">
+          <div>
+            <button class="bg-[#B4F461] font-bold px-7 py-3 text-xl">
+              Blog
+            </button>
+          </div>
+          <div class="flex items-center gap-2">
+            <img src="/assets/logo.png" alt="" />
+            <h1 class="hidden md:block whitespace-pre font-semibold text-xl">
+              Donate Bangladesh
+            </h1>
+          </div>
+          <div class="flex items-center gap-2">
+            <img src="/assets/coin.png" alt="" />
+            <!-- <h1>5500 BDT</h1> -->
+            <div class="flex gap-1 font-medium text-xl">
+              <p id="total-balance">5500</p>
+              <p>BDT</p>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+    <section class="containers mt-20 mb-8">
+      <div class="flex justify-center gap-3">
+        <button id="btn-donation" class="hover:bg-[#B4F461] border font-semibold text-xl px-7 py-3 rounded-lg active">
+          Donation
+        </button>
+
+        <button id="btn-history" class="hover:bg-[#B4F461] border font-semibold text-xl px-7 py-3 rounded-lg">
+          History
+        </button>
+      </div>
+    </section>
+
+    <section id="donation-div" class="containers space-y-6">
+      <div class="grid md:grid-cols-2 grid-cols-1 border p-5 rounded-lg">
+        <!-- 1st div -->
+        <div class="">
+          <img class="h-[390px] w-[522px] rounded-lg" src="/assets/aid-2.jpg" alt="" />
+        </div>
+        <!-- 2nd -->
+        <div class="space-y-6">
+          <div
+            class="bg-gray-200 rounded-lg w-[110px] h-[44px] flex items-center justify-center gap-2"
+          >
+            <img src="/assets/coin.png" alt="" />
+            <div class="flex gap-1">
+              <p id="original-taka-syria">0</p>
+              <p>BDT</p>
+            </div>
+          </div>
+          <h1 class="font-bold text-xl">
+            Support Medical Aid for Refugees in Syria
+          </h1>
+
+          <div>
+            <p class="text-gray-500">
+              The ongoing conflict in Syria has led to a severe shortage of medical supplies and healthcare access. With your help, we can provide life-saving medical care, essential medicines, and mental health support to the displaced and injured. Every contribution helps save lives and bring hope to those in crisis.
+            </p>
+          </div>
+
+          <div>
+            <input id="input-noakhali"
+              class="border rounded-md w-full py-3 px-3"
+              type="text"
+              placeholder="Write Donation Amount"
+            />
+          </div>
+
+          <div>
+            <button id="btn-donate-noakhali"
+              class="bg-[#B4F461] font-semibold text-xl px-7 py-3 rounded-lg w-full"
+            >
+              Donate Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 grid-cols-1 border p-5 rounded-lg">
+        <!-- 1st div -->
+        <div>
+          <img class="h-[390px] w-[522px] rounded-lg" src="/assets/saveing.jpeg" alt="" />
+        </div>
+        <!-- 2nd -->
+        <div class="space-y-6">
+          <div
+            class="bg-gray-200 rounded-lg w-[110px] h-[44px] flex items-center justify-center gap-2"
+          >
+            <img src="/assets/coin.png" alt="" />
+            <div class="flex gap-1">
+              <p id="original-taka-amazon">0</p>
+              <p>BDT</p>
+            </div>
+          </div>
+          <h1 class="font-bold text-xl">
+            Save Endangered Wildlife in the Amazon Rainforest
+          </h1>
+
+          <div>
+            <p class="text-gray-500">
+              Deforestation and poaching are threatening the survival of numerous species in the Amazon rainforest. By donating, you help protect wildlife habitats, fund anti-poaching efforts, and support conservation projects to preserve the biodiversity of this unique ecosystem. Your contribution can help secure a future for these species.
+            </p>
+          </div>
+
+          <div>
+            <input id="input-amazon"
+              class="border rounded-md w-full py-3 px-3"
+              type="text"
+              placeholder="Write Donation Amount"
+            />
+          </div>
+
+          <div>
+            <button id="btn-donate-amazon"
+              class="bg-[#B4F461] font-semibold text-xl px-7 py-3 rounded-lg w-full"
+            >
+              Donate Now
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="grid md:grid-cols-2 grid-cols-1 border p-5 rounded-lg">
+        <!-- 1st div -->
+        <div>
+          <img class="h-[390px] w-[522px] rounded-lg" src="/assets/cyclone.jpg" alt="" />
+        </div>
+        <!-- 2nd -->
+        <div class="space-y-6">
+          <div
+            class="bg-gray-200 rounded-lg w-[110px] h-[44px] flex items-center justify-center gap-2"
+          >
+            <img src="/assets/coin.png" alt="" />
+            <div class="flex gap-1">
+              <p id="original-taka-cyclone">0</p>
+              <p>BDT</p>
+            </div>
+          </div>
+          <h1 class="font-bold text-xl">
+            Rebuild Homes for Cyclone Victims in Bangladesh
+          </h1>
+
+          <div>
+            <p class="text-gray-500">
+              Cyclone Mocha has devastated numerous villages in Bangladesh, leaving families without homes or resources. Your donation can help rebuild houses, provide emergency shelter, and distribute necessary supplies to those affected. Every donation makes a significant impact in restoring hope and stability for these communities.
+            </p>
+          </div>
+
+          <div>
+            <input id="input-cyclone"
+              class="border rounded-md w-full py-3 px-3"
+              type="text"
+              placeholder="Write Donation Amount"
+            />
+          </div>
+
+          <div>
+            <button id="btn-donate-cyclone"
+              class="bg-[#B4F461] font-semibold text-xl px-7 py-3 rounded-lg w-full"
+            >
+              Donate Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- transactions -->
+    <section id="history-div" class="containers hidden">
+        <div id="transaction-form" class="border rounded-lg p-3">
+            
+        </div>
+    </section>
+
+
+    <script src="/js/toggle.js"></script>
+    <script src="/js/donate.js"></script>
+    <script src="/js/history.js"></script>
+    <script src="/js/utilities.js"></script>
+  </body>
+</html>
