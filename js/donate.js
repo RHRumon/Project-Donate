@@ -1,4 +1,4 @@
-
+// donating for Noakhali
 
 document.getElementById('btn-donate-noakhali').addEventListener('click', function(event){
     event.preventDefault();
